@@ -14,7 +14,7 @@
             --color-gatuno:   #2b6cf6;
             --color-buhita:   #e23a54;
             --color-gekko:    #28a745;
-            --font-main: 'Fredoka One', 'Comic Neue', cursive;
+            --font-main:      'Fredoka One', 'Comic Neue', cursive;
           }
 
 /*Global*/
@@ -181,7 +181,7 @@
 
           @media screen and (max-width: 600px) {
             .grid-conocenos img  {
-            max-height: 150px;
+            max-height: 100px;
             }
           }
 
