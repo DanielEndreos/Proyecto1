@@ -179,6 +179,11 @@
           .buhita {background: var(--color-buhita)}
           .gekko  {background: var(--color-gekko)}
 
+          @media screen and (max-width: 600px) {
+            .grid-conocenos img  {
+            max-height: 180px;
+            }
+          }
 
 /*Galería*/
           main > #galeria:target{
