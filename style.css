@@ -201,6 +201,7 @@
 
           @media screen and (max-width: 600px) {
             .tabla-galeria img {
+            margin: 10px 10px 0px 10px;
             max-height: 120px;
             }
           }
