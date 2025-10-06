@@ -163,7 +163,11 @@
           .superMa   {background: var(--color-superMa)}
           .superBay  {background: var(--color-superBay)}
 
-      
+          @media screen and (max-width: 600px) {
+            .tabla-conocenos img  {
+            max-height: 170px;
+            }
+          }
 
 /*Galería*/
           main > #galeria:target{
@@ -197,7 +201,7 @@
 
           @media screen and (max-width: 600px) {
             .tabla-galeria img {
-            max-height: 100px;
+            max-height: 150px;
             }
           }
 
