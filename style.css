@@ -11,9 +11,9 @@
             --color-navhover: rgba(255, 255, 255);
             --color-txtblack: rgb(0, 0, 0);
             --color-txtwhite: #fff;
-            --color-gatuno:   #2b6cf6;
-            --color-buhita:   #e23a54;
-            --color-gekko:    #28a745;
+            --color-superGus:   #2b6cf6;
+            --color-superMa:   #e23a54;
+            --color-superBay:    #28a745;
             --font-main:      'Fredoka One', 'Comic Neue', cursive;
           }
 
@@ -37,8 +37,8 @@
           }
 
           header>a>img {
-            width: 100px;
-            height: 50px;
+            width: 90px;
+            height: 70px;
           }
 
           header nav a {
@@ -118,49 +118,33 @@
           main>section:target~.principal { display: none; }
 
           .imgPJWallpaper {
-            max-width: 100%;
-            max-height: 100%;
-            height: auto;
-            width: auto;
+            display:block;
+            max-width:100%; 
+            height:auto;     
+            max-height:60vh; 
           }
 
           section { display: none; }
 
 /*Conocenos*/
-          .grid-conocenos img {
+          .tabla-conocenos img {
             display: block;
             margin: 0 auto;
             height: auto;
             width: auto;
             max-height: 220px;
+            margin-top: 20px;
             margin-bottom: 20px;
           }
           
-          .grid-conocenos {
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            row-gap: 12px;
+          .tabla-conocenos {
+            display: flex;
             width: 100%;
             height: 100%;
+            align-items: center;
+            justify-content: center;
           }
-
-          /*Posiciones que ocupa cada celda*/
-          .grid-conocenos > .a { grid-column: 1; }
-          .grid-conocenos > .b { grid-column: 2; }
-          .grid-conocenos > .c { grid-column: 3; }
-          .grid-conocenos > .d { grid-column: 1; }
-          .grid-conocenos > .e { grid-column: 2; }
-          .grid-conocenos > .f { grid-column: 3; }
-          .grid-conocenos > .h { grid-column: 1 / 4; }
-
-          .gc-celda {
-            display: grid;
-            place-items: center;
-            text-align: center;
-            font-weight: bold;
-          }
-
+          
           /* Textos SuperHeroes */
           .burbuja {
             min-height: 64px;
@@ -175,9 +159,9 @@
           }
 
           /* Colores interior burbuja */
-          .gatuno {background: var(--color-gatuno)}
-          .buhita {background: var(--color-buhita)}
-          .gekko  {background: var(--color-gekko)}
+          .superGus  {background: var(--color-superGus)}
+          .superMa   {background: var(--color-superMa)}
+          .superBay  {background: var(--color-superBay)}
 
           @media screen and (max-width: 600px) {
             .grid-conocenos img  {
@@ -192,37 +176,24 @@
             align-items:center;
           }
 
-          .grid-galeria img {
-            max-width: 100%;
+          .tabla-galeria img {
+            margin: 20px 20px 0px 20px;
             max-height: 100%;
             max-height: 245px;
             height: auto;
             width: auto;
+            display:flex;
           }
 
-          .grid-galeria {
+          .tabla-galeria {
             margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2,1fr);
-            row-gap: 12px;
+            display: flex;
             width: 100%;
             height: 100%;
+            align-items: center;
+            justify-content: center;
           }
       
-          /*Posiciones que ocupa cada celda*/
-          .grid-galeria > .a { grid-column: 1; grid-row: 1;}
-          .grid-galeria > .b { grid-column: 2; grid-row: 1;}
-          .grid-galeria > .c { grid-column: 1; grid-row: 2;}
-          .grid-galeria > .d { grid-column: 2; grid-row: 2;}
-
-          .gg-celda {
-            display: grid;
-            place-items: center;
-            text-align: center;
-            font-weight: bold;
-          }
-          
           .ilustracion{
             display:flex;
             flex-direction:column;
