@@ -163,11 +163,7 @@
           .superMa   {background: var(--color-superMa)}
           .superBay  {background: var(--color-superBay)}
 
-          @media screen and (max-width: 600px) {
-            .grid-conocenos img  {
-            max-height: 120px;
-            }
-          }
+      
 
 /*Galería*/
           main > #galeria:target{
@@ -178,11 +174,9 @@
 
           .tabla-galeria img {
             margin: 20px 20px 0px 20px;
-            max-height: 100%;
             max-height: 245px;
             height: auto;
             width: auto;
-            display:flex;
           }
 
           .tabla-galeria {
@@ -202,7 +196,7 @@
           }
 
           @media screen and (max-width: 600px) {
-            .grid-galeria img {
+            .tabla-galeria img {
             max-height: 100px;
             }
           }
